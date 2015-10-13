@@ -1,0 +1,1249 @@
+/**
+ * Version: 1.0
+ * Name : Solution Manager - CLV Framework Component
+ *
+ * In solution Manager we have a seperate component for Images as a  Repository.
+ * In this Style sheet the Image / Resource URL will be mapped to the specific repository.
+ */
+
+.clv_errorsection {
+	font-family: Arial;
+	overflow-x: hidden;
+	word-wrap: normal;
+	color: rgb(196,0,0);
+	background: url(../img/status/16x16/AlertMessage.png) no-repeat;
+	margin: 8px;
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.clv_errorsection .default {
+	font-size: 10px;
+}
+
+.clv_errorsection .associationmodel {
+
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.clv_tracesection {
+	font-family: Arial;
+	overflow-x: hidden;
+	word-wrap: normal;
+	color: rgb(45,47,135);
+	margin: 10px;
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.clv_tracesection .defaultTrace {
+	font-size: 8px;
+}
+
+
+.clv_tracesection .associationmodel {
+
+	font-size: 12px;
+	/*font-weight: bold;*/
+
+}
+
+.clv_infosection {
+	font-family: Arial;
+	overflow-x: hidden;
+	word-wrap: normal;
+	color: #0675B7;
+	background: url(../img/status/16x16/Information.png) no-repeat;
+	margin: 8px;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.clv_infosection .defaultinfo {
+	font-size: 8px;
+}
+
+.clv_infosection .associationmodel {
+	font-size: 8px;
+}
+
+
+.clv_container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0px;
+	z-index: 2000;
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	clear: both;
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid #999999; /*mediumLineCol*/
+	background-color: rgb(229, 229, 229); /*light bg*/
+}
+
+.clv_container .clv_container_header {
+	white-space: nowrap;
+	text-align: center;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.clv_container .clv_container_frame {
+	position: absolute;
+	overflow-x: auto;
+	overflow-y: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.clv_container .clv_container_frame .entitiesCount {
+	font-family: Arial;
+	margin: 2px 10px;
+}
+
+.clv_container_frame .frame_loading {
+	background: url(../img/framework/loading.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 50%;
+	top: 2%;
+	font-size: 14px;
+	font-weight: bold;
+	color: #777;
+	padding-left: 20px;
+	text-align: left;
+	text-decoration: none;
+	clear: both;
+}
+
+.overlay {
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgb(229, 229, 229); /*light bg*/
+}
+
+.animation_overlay {
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	cursor: progress;
+}
+
+.clv_entity_container {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 2000;
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	clear: both;
+	text-align: left;
+	vertical-align: top;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.clv_entity_container .clv_entity_header {
+	height: 28px;
+	width: 100%;
+	line-height: 28px;
+	padding: 2px 0px;
+	margin: 0;
+	border: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: default;
+}
+
+.clvActions {
+	height: 28px;
+	top: 2px;
+	float: right;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.icon_button {
+	width: 24px;
+	height: 24px;
+	z-index: 3200;
+	cursor: pointer;
+	float: right;
+	/*	margin-left: 6px;*/
+	margin-left: 2px;
+	margin-right: 2px;
+	/*margin-top: 2px;*/
+	margin-top: 8px;
+	margin-bottom: 2px;
+}
+
+.restoreImg {
+	background: url(../img/framework/16x16/restore_enable_dark.png) no-repeat;
+}
+
+.restoreImg:hover {
+	background: url(../img/framework/16x16/restore_hover_2.png) no-repeat;
+}
+
+.maximizeImg {
+	background: url(../img/framework/16x16/maximize_enable_dark.png) no-repeat;
+}
+
+.maximizeImg:hover {
+	background: url(../img/framework/16x16/maximize_hover_2.png) no-repeat;
+}
+
+.closeImg {
+	background: url(../img/framework/16x16/close_enable_dark.png) no-repeat;
+}
+
+.closeImg:hover {
+	background: url(../img/framework/16x16/close_hover_2.png) no-repeat;
+}
+
+.showAllImg {
+	background: url(../img/framework/16x16/openshowall_enable_dark.png) no-repeat;
+}
+
+.showAllImg:hover {
+	background: url(../img/framework/16x16/openshowall_hover_2.png) no-repeat;
+}
+
+.closeShowAllImg {
+	background: url(../img/framework/16x16/closeshowall_enable_dark.png) no-repeat;
+}
+
+.closeShowAllImg:hover {
+	background: url(../img/framework/16x16/closeshowall_hover_2.png) no-repeat;
+}
+.clv_entity_container .clv_entity_header .customActions {
+	height: 100%;
+	float: right;
+}
+
+.clv_entity_container .clv_entity_header .customActions .div_button {
+	height: 24px;
+	max-width: 185px;
+	z-index: 3200;
+	cursor: pointer;
+	float: right;
+	padding: 0 2px;
+	margin-right: 5px;
+	margin-top: 2px;
+	font-size: 14px;
+	border: 1px solid #999999; /*mediumLineCol*/
+}
+
+.clv_entity_container .clv_entity_header .customActions .div_button .button_text {
+	float: right;
+}
+
+.clv_entity_container .clv_entity_header .customActions .div_button .button_icon {
+	height: 24px;
+	width: 24px;
+	float: left;
+}
+
+.clv_entity_container .clv_entity_header .customActions .div_button:hover, .clv_entity_container .clv_entity_header .customActions .div_button:focus, .clv_entity_container .clv_entity_header .customActions .div_button:active {
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
+.clv_entity_container .clv_entity_frame {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border: 1px solid #999999; /*mediumLineCol*/
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion {
+	height: 100%;
+	float: left;
+	cursor: pointer;
+}
+
+.clv_entity_defaultText {
+	font-family: Arial;
+	font-size: 12px;
+	text-align: right;
+	vertical-align: middle;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion {
+	height: 14px;
+	float: right;
+	border: 1px solid #e5e5e5;
+	background-color: #e5e5e5;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion ul li {
+	height: 12px; /*height: 8px;*/
+	float: left;
+	text-decoration: none;
+	background-color: #bfbfbf; /*background-color: #999999;*/
+	border: 1px solid #e5e5e5;/*border: 3px solid #e5e5e5;*/
+	cursor: pointer;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion ul li:hover {
+	border: 1px dashed #ffffff;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion .visibleSubEntities {
+	background-color: #e5e5e5 !important;/*	background-color: #ea700d !important;*/
+	border: 1px solid #bfbfbf;/*border: 1px solid #999999;*/
+	height: 12px;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion .visibleSubEntities:hover {
+	border: 1px dashed #999999;/*border: 1px dashed #bfbfbf;*/
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegion .selectedSubEntities {
+	background-color: #ffffff !important;
+	border: 1px solid #bfbfbf;	/*border: 1px solid #000000;*/
+	height: 12px;
+	width: auto;
+}
+.clv_entity_container .clv_entity_frame .navSelectorRegion .selectedSubEntities:hover {
+	border: 1px dashed #999999;/*border: 1px dashed #bfbfbf;*/
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegionPS .selectedSubEntities {
+	background-color: #ffffff !important;
+	border: 1px solid #bfbfbf;	/*border: 1px solid #F39B02;*/
+	border-top-color: #F39B02;
+	border-top-width: 2px;
+	height: 11px;
+}
+.clv_entity_container .clv_entity_frame .navSelectorRegionPS .selectedSubEntities:hover {
+
+	border: 1px dashed #999999;	/*border: 1px dashed #bfbfbf;*/
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegionTS .selectedSubEntities {
+	background-color: #ffffff !important;
+	border: 1px solid #bfbfbf;	/*border: 1px solid #008FD3;*/
+	border-top-color: #008FD3;
+	border-top-width: 2px;
+	height: 11px;
+}
+
+.clv_entity_container .clv_entity_frame .navSelectorRegionTS .selectedSubEntities:hover {
+	background-color: #ffffff !important;
+}
+
+.clv_entity_container .clv_entity_frame .subEntitiesRegion {
+	float: right;
+}
+
+.clv_entity_container .clv_entity_frame .subEntitiesRegionTS {
+	float: right;
+}
+
+.clv_entity_container .clv_entity_frame .subEntitiesRegionPS {
+	float: right;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityTypeIcon {
+	background-color: #ffffff;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityPSIcon_32 {
+	background: #ffffff url(../img/landscapeobjects/32x32/ProductSystem_enable.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityTSIcon_32 {
+	background: #ffffff url(../img/landscapeobjects/32x32/TechnicalSystem_enable.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityPSIcon_32:hover {
+	background: #ffffff url(../img/landscapeobjects/32x32/ProductSystem_hover.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityTSIcon_32:hover {
+	background: #ffffff url(../img/landscapeobjects/32x32/TechnicalSystem_hover.png) no-repeat;
+	background-position: center;
+}
+
+/*.clv_entity_container .clv_entity_frame .idnRegion .entityTSHUBIcon_32 {
+ background: #ffffff url(../img/tshubImage_32.png) no-repeat;
+ background-position: center;
+ }*/
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityPSIcon_48 {
+	background: #ffffff url(../img/landscapeobjects/48x48/ProductSystem_enable.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityTSIcon_48 {
+	background: #ffffff url(../img/landscapeobjects/48x48/TechnicalSystem_enable.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityPSIcon_48:hover {
+	background: #ffffff url(../img/landscapeobjects/48x48/ProductSystem_hover.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .entityTSIcon_48:hover {
+	background: #ffffff url(../img/landscapeobjects/48x48/TechnicalSystem_hover.png) no-repeat;
+	background-position: center;
+}
+
+/*.clv_entity_container .clv_entity_frame .idnRegion .entityTSHUBIcon_48 {
+ background: #ffffff url(../img/tsImage_32.png) no-repeat;
+ background-position: center;
+ }*/
+
+.clv_entity_container .clv_entity_frame .idnRegion .systemSid {
+	color: #ffffff;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .systemTypeIcon {
+
+}
+
+/*
+ * Technical syetm Icon specific CSS declarations
+ */
+
+.clv_entity_container .clv_entity_frame .idnRegion .ABAPApplicationServerIcon_32 {/*ABAPIcon_32*/
+	background: url(../img/technicaltypes/32x32/ABAPApplicationServer.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .ApplicationServerJavaIcon_32 {/*JAVAIcon_32 */
+	background: url(../img/technicaltypes/32x32/ApplicationServerJava.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .BusinessObjectsClusterIcon_32 {
+	background: url(../img/technicaltypes/32x32/BusinessObjectsCluster.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .GenericAppServerIcon_32 {
+	background: url(../img/technicaltypes/32x32/GenaricApplications.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .HANADataBaseServerIcon_32 {
+	background: url(../img/technicaltypes/32x32/HanaDatabse.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .IntroscopeManagerClusterIcon_32 {
+	background: url(../img/technicaltypes/32x32/IntroscopeManagerCluster.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .IntroscopeManagerStandaloneIcon_32 {
+	background: url(../img/technicaltypes/32x32/IntroscopeManagerStandalone.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .LiveCacheIcon_32 {
+	background: url(../img/technicaltypes/32x32/LiveCache.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .MasterDataManagementIcon_32 {
+	background: url(../img/technicaltypes/32x32/MasterDataManagement.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .SybaseUnwiredPlatformIcon_32 {
+	background: url(../img/technicaltypes/32x32/SybaseUnwiredPlatform.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .TREXIcon_32 {
+	background: url(../img/technicaltypes/32x32/TREX.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .Unspecific3LayerIcon_32 {
+	background: url(../img/technicaltypes/32x32/Unspecific3LayerSystem.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .UnspecificClusterIcon_32 {
+	background: url(../img/technicaltypes/32x32/UnspecificCluster.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .UnspecificStandaloneIcon_32 {
+	background: url(../img/technicaltypes/32x32/UnspecificStandaloneApplication.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .VendorSpecificIcon_32 {
+	background: url(../img/technicaltypes/32x32/VendorSpecificServer.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .WebdispatcherIcon_32 {
+	background: url(../img/technicaltypes/32x32/WebDispatcher.png) no-repeat;
+	background-position: center;
+}
+/**
+ * 	Mapping to 48 x48 Pixel size images for Technical system types.
+ */
+
+.clv_entity_container .clv_entity_frame .idnRegion .ABAPApplicationServerIcon_48 {/*ABAPIcon_32*/
+	background: url(../img/technicaltypes/48x48/ABAPApplicationServer.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .ApplicationServerJavaIcon_48 {/*JAVAIcon_32 */
+	background: url(../img/technicaltypes/48x48/ApplicationServerJava.png) no-repeat;
+	background-position: center;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .BusinessObjectsClusterIcon_48 {
+	background: url(../img/technicaltypes/48x48/BusinessObjectsCluster.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .GenericAppServerIcon_48 {
+	background: url(../img/technicaltypes/48x48/GenaricApplications.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .HANADataBaseServerIcon_48 {
+	background: url(../img/technicaltypes/48x48/HanaDatabse.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .IntroscopeManagerClusterIcon_48 {
+	background: url(../img/technicaltypes/48x48/IntroscopeManagerCluster.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .IntroscopeManagerStandaloneIcon_48 {
+	background: url(../img/technicaltypes/48x48/IntroscopeManagerStandalone.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .LiveCacheIcon_48 {
+	background: url(../img/technicaltypes/48x48/LiveCache.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .MasterDataManagementIcon_48 {
+	background: url(../img/technicaltypes/48x48/MasterDataManagement.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .SybaseUnwiredPlatformIcon_48 {
+	background: url(../img/technicaltypes/48x48/SybaseUnwiredPlatform.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .TREXIcon_48 {
+	background: url(../img/technicaltypes/48x48/TREX.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .Unspecific3LayerIcon_48 {
+	background: url(../img/technicaltypes/48x48/Unspecific3LayerSystem.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .UnspecificClusterIcon_48 {
+	background: url(../img/technicaltypes/48x48/UnspecificCluster.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .UnspecificStandaloneIcon_48 {
+	background: url(../img/technicaltypes/48x48/UnspecificStandaloneApplication.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .VendorSpecificIcon_48 {
+	background: url(../img/technicaltypes/48x48/VendorSpecificServer.png) no-repeat;
+	background-position: center;
+}
+.clv_entity_container .clv_entity_frame .idnRegion .WebdispatcherIcon_48 {
+	background: url(../img/technicaltypes/48x48/WebDispatcher.png) no-repeat;
+	background-position: center;
+}
+
+/*
+ *
+ */
+
+.clv_entity_container .clv_entity_frame .idnRegion .systemTechType {
+	color: #ffffff;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	font-size: 10px;
+}
+
+.clv_entity_container .clv_entity_frame .idnRegion .selectionIndicator {
+}
+
+.clv_entity_container .clv_entity_frame .subEntitiesRegion .ui-tabs-selected a {
+	color: #000;
+	font-weight: bold;
+	border-top: 2px solid #000000;
+	overflow: visible;
+}
+
+.clv_entity_container .clv_entity_frame .subEntitiesRegionTS .ui-tabs-selected a {
+	color: #000;
+	font-weight: bold;
+	border-top: 2px solid #008FD3;
+	overflow: visible;
+}
+
+.clv_entity_container .clv_entity_frame .subEntitiesRegionPS .ui-tabs-selected a {
+	color: #000;
+	font-weight: bold;
+	border-top: 2px solid #F39B02;
+	overflow: visible;
+}
+
+.ui-tabs {
+	padding: 0;
+	text-align: center;
+}
+
+.ui-tabs .ui-tabs-nav {
+	padding: 0 !important;
+}
+
+.ui-tabs .ui-widget-header {
+	border: 0px !important;
+}
+
+.ui-tabs-panel {
+	padding: .2px !important;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: left;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	margin: 0 !important;
+	top: 0 !important;
+	z-index: 3000;
+	height: 28px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	padding-bottom: 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	padding: 5px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-bottom-right-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+	border-bottom-left-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+	border-top-right-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	border-top-left-radius: 0;
+}
+
+.ui-widget {
+	font-size: 0.8em;
+}
+
+.ui-tabs-paging-more, .ui-tabs-paging-next-enable, .ui-tabs-paging-prev-enable, .ui-tabs-paging-next-disable, .ui-tabs-paging-prev-disable {
+	float: right !important;
+}
+
+.ui-tabs-paging-more a {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	background: url('../img/framework/28x28/selection_enable_dark.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+}
+
+.ui-tabs-paging-more a:hover {
+	background-color: #fff;
+	/*	background: url('../imgframework/16x16/selection_hover_1.png') no-repeat;*/
+}
+
+.ui-tabs-paging-next-enable a {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	background: url('../img/framework/16x16/rightnav_enable_dark.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+	border: none;
+}
+
+.ui-tabs-paging-next-disable a {
+	display: block;
+	position: relative;
+	z-index: -1;
+	text-decoration: none;
+	background: url('../img/framework/16x16/rightnav_disable.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+	cursor: default !important;
+}
+
+.ui-tabs-paging-next-enable a:hover {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	background: url('../img/framework/16x16/rightnav_enable_dark.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+	border: none;
+	background-color: #FFFFFF;
+}
+
+.ui-tabs-paging-prev-enable a {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	background: url('../img/framework/16x16/leftnav_enable_dark.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+}
+
+.ui-tabs-paging-prev-disable a {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	background: url('../img/framework/16x16/leftnav_disable.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+	cursor: default !important;
+}
+
+.ui-tabs-paging-prev-enable a:hover {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	background: url('../img/framework/16x16/leftnav_enable_dark.png') no-repeat;
+	background-position: center;
+	padding: 14px !important;
+	background-color: #FFFFFF;
+}
+
+.list_layout {
+	width: 100%;
+	margin: 2px 0;
+	padding: 2px 0;
+	float: left;
+}
+
+.list_layout_child {
+	width: 100%;
+	padding: 2px 0;
+	float: left;
+}
+
+.list_layout_child:hover {
+	cursor: pointer;
+	background-color: #FBDB0C;
+	border-color: #FFB00F;
+	border-style: dashed;
+	border-width: 2px;
+	z-index: 2030;
+}
+
+.list_layout_childHovered {
+	background-color: #FCDC3B;
+}
+
+.line {
+	border-bottom: 1px solid #999999;
+}
+
+.list_layout .icon {
+	height: 24px;
+	width: 24px;
+	float: left;
+	padding-right: 3px;
+}
+
+.Product {
+	background: url(../img/landscapeobjects/24x24/Product_enable.png) no-repeat;
+}
+.ProductVersion {
+	background: url(../img/landscapeobjects/24x24/ProductVersion_enable.png) no-repeat;
+}
+.ProductInstance {
+	background: url(../img/landscapeobjects/24x24/ProductInstance_enable.png) no-repeat;
+}
+.SoftwareComponent {
+	background: url(../img/landscapeobjects/24x24/SoftwareComponent_enable.png) no-repeat;
+}
+.SoftwareComponentVersion {
+	background: url(../img/landscapeobjects/24x24/SoftwareComponentVersion_enable.png) no-repeat;
+}
+.TechnicalSystem {
+	background: url(../img/landscapeobjects/24x24/TechnicalSystem_enable.png) no-repeat;
+}
+.ProductSystem {
+	background: url(../img/landscapeobjects/24x24/ProductSystem_enable.png) no-repeat;
+}
+/*.clv_entity_container .clv_entity_frame .idnRegion .entityTSIcon_32 {
+ background: #ffffff url(../img/landscapeobjects/32x32/TechnicalSystem_enable.png)no-repeat;
+ background-position: center;
+ }*/
+
+.list_layout_child .child_type_icon {
+	height: 24px;
+	width: 24px;
+	/*background: url(../clv_mime_repo/images/child_type_icon_24.png) no-repeat;*/
+	float: left;
+	padding-right: 3px;
+}
+
+.list_layout .text {
+	min-height: 26px;
+	width: 80%;
+	float: left;
+}
+
+.list_layout .text .title_text {
+	width: auto;
+	/*	font-size: 14px;*/
+	padding-top: 3px;
+}
+
+.list_layout .text .detail_text {
+	width: auto;
+	/*font-size: 10px;*/
+}
+
+.list_layout .right_icon {
+	height: 24px;
+	width: 24px;
+	padding: 2px;
+	float: right;
+}
+
+.list_layout .right_icon .ABAPIcon_24 {
+	background: url(../img/technicaltypes/24x24/ABAPApplicationServer.png) no-repeat;
+	background-position: center;
+}
+
+.list_layout .right_icon .JAVAIcon_24 {
+	background: url(../img/technicaltypes/24x24/ApplicationServerJava.png) no-repeat;
+	background-position: center;
+}
+
+.clv_association_view {
+	width: 680px;
+	height: 700px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 2002;
+	clear: both;
+	display: none;
+}
+
+.clv_association_view .clv_association_view_container {
+	width: 655px;
+	float: left;
+	overflow: hidden;
+	min-height: 120px;
+}
+
+.clv_association_view .arrow-left {
+	width: 0;
+	height: 0;
+	float: left;
+	position: relative;
+	top: 65px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #ffffff;
+}
+
+.clv_association_view_container .clv_association_view_header {
+	height: 28px;
+	width: 100%;
+	line-height: 28px;
+	padding: 2px 0px;
+	margin: 0;
+	border: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: default;
+}
+.clv_association_view_container .clv_association_view_frame {
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+	min-height: 120px;
+}
+
+.clv_association_view_container .clv_association_view_frame .clv_association_levels {
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+	padding: 5px 5px 0;
+}
+
+.clv_association_view_container .clv_association_view_frame .clv_association_levels .clv_association_level {
+	border: 2px solid #cccccc;
+	margin-bottom: 5px;
+}
+
+.clv_association_level .level_container {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+}
+
+.clv_association_level .level_container .level_header {
+	width: 50px;
+	height: 100%;
+	padding: 0px;
+	float: left;
+	background-color: #cccccc;
+	text-align: center;
+}
+
+.clv_association_level .level_container .level_frame {
+	height: 100%;
+	padding: 0px;
+	background-color: #F2F2F2;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.clv_association_level .level_container .level_frame .entitiesCount {
+	font-family: Arial;
+	margin: 2px;
+}
+
+.clv_association_level .level_container .level_header .level_title_vertical {
+	width: 50px;
+	height: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.systemDisplay {
+	width: 258px;
+	height: 162px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.clv_association_level .level_label {
+	/*width: 50px;*/
+	/*	writing-mode:tb-rr;*/
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	white-space: pre-line;
+	display: block;
+	/*z-index: 2020;*/
+	float: left;
+	color: #888;
+	width: 170px;
+	height: 170px;
+	vertical-align: middle;
+	text-align: center;
+	/*left: -30px;*/
+	/*font-family: Trebuchet MS, Helvetica, sans-serif;*/
+	font-size: 18px;
+	font-weight: bold;
+	/*text-shadow: 0px 0px 1px #e5e5e5;*/
+	position: absolute;
+	/*top: 400px;*/
+	/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+	-ms-filter: 'progid:DXImageTransform.Microsoft.MotionBlur(strength=0), progid:DXImageTransform.Microsoft.BasicImage(rotation = 3 , xray = 1)';
+}
+
+/*Not Used*/
+.verticalLabel1 {
+	font-weight: bold;
+	font-size: 13px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	position: absolute;
+	left: 24px;
+	top: 3px;
+	margin-left: -20px;
+	left: 20px;
+}
+
+/*Start  of  For Single View Model Container related CSS*/
+.svmSector {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	display: block;
+	font-family: Arial;
+	font-size: 14px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border: 1px solid #b0b0b0;
+}
+
+.svmSectorFreeStyle {
+	padding: 0px;
+	display: block;
+	font-family: Arial;
+	font-size: 14px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.svmSectorContainer {
+	padding: 0px;
+	display: block;
+	font-family: Arial;
+	font-size: 14px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+}
+
+.svmSectorHeader {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	width: 100%;
+	height: 28px;
+	color: #000000;
+	background-color: #cccccc;/* #008FD3;*/
+	border-color: #999999; /*#008FD3;*/
+}
+
+.svmSectorTitle {
+	white-space: nowrap;
+	height: 100%;
+	float: left;
+}
+
+.svmSectorCloseBtn {
+	background: url(../img/framework/24x24/closesection_enable_dark.png) no-repeat;
+	height: 24px;
+	width: 24px;
+	float: right;
+	z-index: 2012;
+	margin: 2px 0;
+}
+
+.svmSectorCloseBtn:hover {
+	background: url(../img/framework/24x24/closesection_hover_2.png) no-repeat;
+	height: 24px;
+	width: 24px;
+	float: right;
+	z-index: 2012;
+}
+
+.svmSectorFrame {
+	padding: 2px !important;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: left;
+}
+
+.primaryEntityTS {
+	border-color: #999999; /*#008FD3;*/
+}
+
+.primaryEntityPS {
+	border-color: #999999; /*#F39B02;*/
+}
+
+.svmDefaultTopContainer {
+	width: 100%;
+	height: 0px;
+	display: none;
+	top: 0;
+}
+
+.svmDefaultTopContainer .svmEnabledTopContainer {
+}
+
+.svmDefaultMidontainer {
+	float: right;
+	top: 0;
+	display: none;
+	z-index: 2400;
+}
+.svmDefaultTopContainer {
+}
+.svmDefaultBottomContainer {
+	width: 100%;
+	display: none;
+	height: 0px;
+	top: 0;
+	bottom: 0px;
+}
+.svmDefaultTopContainer {
+}
+.svmDefaultVSpacer {
+	width: 28px;
+	height: 100%;
+	display: none;
+	float: left;
+	top: 0;
+}
+.svmDefaultHSpacer {
+	float: right;
+	height: 28px;
+	width: 100%;
+}
+.svmDefaultDispTop {
+	height: 100%;
+	display: none;
+	float: left;
+	top: 0;
+}
+.svmDefaultDispMid {
+	width: 100%;
+	display: none;
+	float: right;
+}
+.svmDefaultDispBottom {
+	height: 100%;
+	display: none;
+	float: left;
+	top: 0;
+	background-color: #FFFFFF;
+}
+/*End  of  For Single View Model Container related CSS*/
+
+.prodSystemsSelect, .techdSystemsSelect {
+	-moz-box-shadow: 0px 10px 10px 5px #444;
+	-webkit-box-shadow: 0px 10px 10px 5px #444;
+	box-shadow: 0px 10px 10px 5px #444;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#444,direction=180,strength=1);
+}
+
+
+/* Scroll Pane CSS Start */
+
+.scrollContainer {
+	overflow: hidden;
+	position: relative;
+}
+
+.scrollPane {
+	position: absolute;
+}
+
+.scrollVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px; /*14px;*/ /*16px;*/
+	height: 100%;
+}
+
+.scrollHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 8px; /* 14px;*/
+}
+
+.scrollVerticalBar *, .scrollHorizontalBar * {
+	margin: 0;
+	padding: 0;
+}
+
+.scrollCap {
+	display: none;
+}
+
+.scrollHorizontalBar .scrollCap {
+	float: left;
+}
+
+.scrollTrack {
+	background: #f2f2f2;/* #dde;*/
+	position: relative;
+}
+
+.scrollDrag {
+	background: #b8c2cc;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.scrollHorizontalBar .scrollTrack, .scrollHorizontalBar .scrollDrag {
+	float: left;
+	height: 100%;
+}
+
+.scrollArrow {
+	background: #707070; /*#50506d;*/
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.scrollArrow.scrollDisabled {
+	cursor: default;
+	background: #80808d;
+}
+
+.scrollVerticalBar .scrollArrow {
+	height: 14px;
+}
+
+.scrollHorizontalBar .scrollArrow {
+	width: 14px;
+	float: left;
+	height: 100%;
+}
+
+.scrollVerticalBar .scrollArrow:focus {
+	outline: none;
+}
+
+.scrollCorner {
+	float: left;
+	height: 100%;
+}
+
+* html .scrollCorner {
+	margin: 0 -3px 0 0;
+}
+
+/* Scroll Pane CSS End */

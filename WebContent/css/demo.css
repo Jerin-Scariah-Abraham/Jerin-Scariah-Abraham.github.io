@@ -1,0 +1,400 @@
+
+.sphereFriend{
+	width: 100%;
+	height: 100%;
+    /* margin: auto; */
+    /* position: absolute; */
+    margin-top: 20px;
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    color: #925050;
+}
+
+.popout{
+	height: 50px;
+    width: 50px;
+    position: absolute;
+    background-image: url("../css/popout.png");
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+}
+
+#container{
+    background-image: url("../css/space1.jpg");
+}
+
+#popupContainer{
+	width: 80%;
+    height: 90%;
+    margin: auto;
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    background-color: #EBEDEF;
+    opacity: 0.95;
+
+}
+
+.popupClose{
+	height: 50px;
+    width: 50px;
+    position: absolute;
+    background-image: url("../css/close.png");
+    background-size: contain;
+    right:0;
+    top:0;
+    z-index:10;
+}
+
+#personalMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box !important;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: 10px transparent solid;   
+    font-family: monospace;
+    font-size: 30px;
+    
+    white-space: pre-line;
+}
+
+.personalMessage100{
+	width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.personalMessage60{
+	width: 100%;
+    height: 60%;
+    z-index: 0;
+}
+
+.personalImages40{
+	height: 40%;
+    z-index: 0;
+    width: auto !important;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 10px solid transparent;
+}
+
+.messageImage{
+	width: 320px;
+    background-size: cover;
+    position: relative;
+    margin-left: 10px;
+    opacity: 0.99;
+    display: inline-block;
+}
+
+.popupTitle{
+	width: 100%;
+    position: absolute;
+    height: 50px;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#footerButtons{
+	width: 100%;
+    height: 40px !important;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    margin-bottom: 26px;
+    border-left: 31px solid transparent;
+}
+
+#myFriends{
+	width: 40%;
+    height: 100%;
+    background-color: #dadada;
+    float: left;
+    
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 3px rgba(128,128,128,1), /* gradient effects */ 0px 4px rgba(118,118,118,1), 0px 5px rgba(108,108,108,1), 0px 6px rgba(98,98,98,1), 0px 7px rgba(88,88,88,1), 0px 8px rgba(78,78,78,1), 0px 14px 6px -1px rgba(128,128,128,1);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+}
+
+#myJourney{
+	width: 40%;
+    height: 100%;
+    background-color: #dadada;
+    margin-right: 20px;
+    right: 0;
+    float: right;
+    
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 3px rgba(128,128,128,1), /* gradient effects */ 0px 4px rgba(118,118,118,1), 0px 5px rgba(108,108,108,1), 0px 6px rgba(98,98,98,1), 0px 7px rgba(88,88,88,1), 0px 8px rgba(78,78,78,1), 0px 14px 6px -1px rgba(128,128,128,1);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+}
+
+#myFriends:active,#myJourney:active {
+      -webkit-box-shadow: 0px 3px rgba(128,128,128,1), 0px 0px rgba(118,118,118,1), 0px 0px rgba(108,108,108,1), 0px 0px rgba(98,98,98,1), 0px 0px rgba(88,88,88,1), 0px 0px rgba(78,78,78,1), 0px 0px 0px 0px rgba(128,128,128,.6) !important;
+       
+       -webkit-transform: translate(0, 5px); /* depth of button press */
+}
+
+#myFriends span,#myJourney span{
+    -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    display: inline-block;
+    color: #3A474D;
+    text-transform: uppercase;
+    font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;
+    text-align: center;
+    padding-top: 4px;
+    width: 100%;
+}
+
+
+#containerBack{
+	background-image: url(../css/america.jpg);
+}
+
+.journeyTile{
+	width: 40%;
+    height: 242px;
+    box-sizing: border-box;
+    border: 10px solid transparent;
+    float: left;
+    opacity: 0.93;
+    margin: 3%;
+    
+}
+
+.journeyImage{
+	height: 100%;
+    background-size: cover;
+    width: 240px;
+    position: absolute;
+}
+
+.titleJ{
+	width: calc(100% - 240px);
+    height: 20px;
+    position: absolute;
+    left: 240px;
+    z-index: 23;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+
+.personalTile{
+	height: 180px;
+    width: 180px;
+    float: left;
+}
+
+.journeyFeeling{
+	width: calc(100% - 240px);
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background-color: #ABCCD2;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    box-sizing: border-box;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	position: absolute;
+	background-color: #9FA5AB;
+}
+	/* flip the pane when hovered */
+ 	.flipPlease .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	width: 100%;
+    height: 100%;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+#description {
+    text-align: left;
+    float: left;
+    width: 49%;
+    max-width: 500px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#showoff {
+    float: left;
+    width: 49%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#globe {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 700px;
+}
+
+#sphere, #flights, #glow-shadows, #locations, #drag {
+
+	-webkit-transform: 	scale(2);
+	position: absolute;
+    top: 16%;
+    left: 35%;
+    width: 400px;
+    height: 400px;
+}
+
+#glow-shadows {
+    top: 1px;
+    left: 1px;
+}
+
+#glow-shadows.earth {
+    background: url(../images/earth-glow-shadows.png);
+}
+
+#glow-shadows.mars {
+    background: url(../images/mars-glow-shadows.png);
+}
+
+.location {
+	background:url(../image/dataCenter.png);
+	background-color: #f2f2f2;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 10px;
+    top: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 50%;
+    cursor: pointer;
+	opacity:1;
+}
+
+.location:hover {
+  opacity:0.8;
+}
+
+.flight {
+    position: absolute;
+    width: 24px;
+    height: 25px;
+    left: 10px;
+    top: 10px;
+    background: url(../images/plain.png);
+    background-size: 100% 100%;
+    margin-left: -12px;
+    margin-top: -12.5px;
+    cursor: pointer;
+}
+
+.flight:hover {
+    width: 36px;
+    height: 37.5px;
+    margin-left: -18px;
+    margin-top: -18.75px;
+}
+
+
+.choose_example {
+    width: 35%;
+    margin-left: 32.5%;
+}
+
+#example_code {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    resize: none;
+    display: none;
+}
+
+.code {
+    margin-top: 10px;
+}
+
+.social {
+    display: inline-block;
+}
+
+.social.twitter {
+    vertical-align: -3px;
+}
+
+.social.google {
+    vertical-align: -7px;
+}

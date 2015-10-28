@@ -1,3 +1,90 @@
+.selectedButton>span{
+    opacity: 0.2;
+    background: #dadada;
+}
+
+#slider{
+	width: 94%;
+    height: 90%;
+    background: #dadada;
+    top: 4%;
+    left: 3%;
+    position: absolute;
+    opacity: 0.95;
+    display: none;
+}
+
+.slide{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.slide1{
+	background: url(./help/help1.png);
+	background-size: cover;
+	display: block;
+}
+
+.slide2{
+	background: url(./help/help2.png);
+	background-size: cover;
+	display: none;
+}
+
+.slide3{
+	background: url(./help/help3.png);
+	background-size: cover;
+	display: none;
+}
+
+.slide4{
+	background: url(space.jpg);
+	background-size: cover;
+	display: none;
+}
+
+#slideLeft:hover, #slideRight:hover{
+	opacity: 0.6;
+    transform: scale(1.2);
+}
+
+#slideLeft, #slideRight{
+	width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #A3DAEF;
+    z-index: 1000;
+    top: 46%;
+    font-size: 40px;
+    font-family: monospace;
+    padding-left: 22px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#slideRight{
+	right:0;
+}
+
+#slideTitle{
+	height: 40px;
+    font-size: 28px;
+	text-align: center;
+    line-height: 40px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.closeHelp{
+	background-image: url("../css/close.png");
+	background-size: contain;	
+	width: 40px;
+	height:40px;
+	position: absolute;
+	top:0;
+	right:0;
+}
 
 .sphereFriend{
 	width: 100%;

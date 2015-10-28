@@ -174,7 +174,7 @@
 			},
 			"Shweta K Savadatti":{
 				"msg":"Hi Shweta,\n\nFirst of all thanks for being an encouraging friend. I have interacted a lot with you after have moved in to LP & MP. You have been a hard working individual and as thy say “for us to be happy we have to make you happy: since you are the Queen (Q) of the team”. \n I wish you all the very best and be in contact. \nRegards,\nJerin.",
-				"pics":["css/pics/shweta1.png","css/pics/shweta2.png","css/pics/shweta3.png","css/pics/shweta4.png","css/pics/shweta5.png"]
+				"pics":["css/pics/shweta1.png","css/pics/shweta2.png","css/pics/shweta3.png","css/pics/shweta4.png"]
 			},
 			"Madhura Lobo":{
 				"msg":"Hi Madhura,\n\nIf you remember every morning we used to see and wish each other. You are a soft natured person and have made it to most of the activities apart from work also. Please do continue and I wish you all the very best. \nRegards,\nJerin.",
@@ -345,35 +345,35 @@
 				"pics":[]
 			},
 			"Manoj Kumar":{
-				"msg":"",
+				"msg":"Hi Manoj,\n\nWe had lot of fun together, and we have been able to utilize your drawing skills in making portraits for birthdays ;-) You are a reliable and trusted friend. I still remember our(you, me and Abhiraj) IPL journey in Bhuvaneswar, it was memorable. And during outbounds the fun we had will be remembered. Looking forward to the collaborations ahead. \n\nRegards,\nJerin",
 				"pics":["css/pics/manoj1.png","css/pics/manoj2.png","css/pics/manoj3.png","css/pics/manoj4.png","css/pics/manoj5.png","css/pics/manoj6.png"]
 			},
 			"Ravikiran":{
-				"msg":"",
+				"msg":"Hi Ravikiran,\n\nWe got to know each other after the ‘Badminton Tournamant’ we had in the team. You are a helpful and reliable person. Good to see that you have an open heart to learn UI5. All the best for your future and let me know in case I can be of any help. Stay in touch. \n\nRegards,\nJerin",
 				"pics":[]
 			},
 			"Yogesh":{
-				"msg":"",
+				"msg":"Hey Yogesh,\n\nIt was fun working with you in our team (research), hope you had lot of learnings and take-aways from here. Our what the hack will be remembered ;-), Be in contact and thanks for all your support. \n\nRegards,\nJerin",
 				"pics":["css/pics/yogesh1.png"]
 			},
 			"Sreenath":{
-				"msg":"",
+				"msg":"Hey Sreenath,\n\nIt was fun working with you in our team during your tenure in our team (research), hope you had lot of learnings and take-aways from here. Our what the hack will be remembered ;-), Be in contact and thanks for all your support. \n\nRegards,\nJerin",
 				"pics":["css/pics/yogesh1.png"]
 			},
 			"Palak":{
-				"msg":"",
+				"msg":"Hi Palak,\n\nIt was fun working with you in our team during your tenure in our team (research), hope you had lot of learnings and take-aways from here. Our what the hack will be remembered ;-), Be in contact and thanks for all your support. \n\nRegards,\nJerin",
 				"pics":["css/pics/palak1.png"]
 			},
 			"Umashankar":{
-				"msg":"",
+				"msg":"Hi Uma,\n\nHope you are doing good. We have worked together in activities like JUMMM, whatTheHack etc.. Your help, support, and encouragements will always be remembered and thanks for being a wonderful friend. Be in contact. And all the best for your future. \n\nRegards,\nJerin",
 				"pics":["css/pics/uma1.png","css/pics/uma2.png","css/pics/uma3.png"]
 			},
 			"Aravind Sharma":{
-				"msg":"",
+				"msg":"Hi Aravind,\n\nYou have been a real professional be it in your clothing, speaking and behavior. I had learnt a lot for you. I thank you for all your support and encouragements. Do consider me as you already did for the events, activities that you conduct. I had learnt a lot from the events like PID,PIS,EUID etc.. \n\nBe in touch and wish you all the very best. \n\nRegards,\nJerin",
 				"pics":["css/pics/aravind1.png","css/pics/aravind2.png","css/pics/aravind3.png","css/pics/aravind4.png"]
 			},
 			"Hartosh":{
-				"msg":"",
+				"msg":"Hey Hartosh,\n\nIt was fun working with you in our team (research), hope you had lot of learnings and take-aways from here. Our what the hack will be remembered ;-), Be in contact and thanks for all your support. \n\nRegards,\nJerin",
 				"pics":["css/pics/hartosh1.png"]
 			}
 
@@ -387,72 +387,72 @@
 		 {
 			"title": "myLocation",
 			"pic": "css/feelings/location.png",
-			"feeling":""
+			"feeling":"My Location will be missed. been here for quite some time :-) May be for some days even after moving to the new team my reflex action could bring me here. And, there is a myth that people who sit here have a chance of traveling/settling abroad."
 		 },
 		 {
 			"title": "research",
 			"pic": "css/feelings/research.png",
-			"feeling":""
+			"feeling":"My tenure in research team was fabulous. I was passionate about all the work I had here like HANA4Delivery, Kinect SDK, LandscapeOverview, Gesture Speech and Eye Gaze modules, Pan&Zoom control etc.."
 		 },
 		 {
 			"title": "halm",
 			"pic": "css/feelings/halm.png",
-			"feeling":""
+			"feeling":"I loved my work in HALM, had learnt new technologies like Python, HANA etc.. People working with me here were encouraging and sweet. Thanks for all the support."
 		 },
 		 {
 			"title": "lp",
 			"pic": "css/feelings/lp.jpg",
-			"feeling":""
+			"feeling":"LP will be missed.My work for LP have been fabulous, I had chance to implement some good looking UI’s here :-) People working with me were loving, caring and most importantly encouraging."
 		 },
 		 {
 			"title": "mp",
 			"pic": "css/feelings/mp.png",
-			"feeling":""
+			"feeling":"It’s a nice feeling to be with MP starting from the initial days and watch the product being GA. Had enjoyed building lot of good, complex and durable UI’s. Thanks for all the support."
 		 },
 		 {
 			"title": "demoDays/whatTheHack",
 			"pic": "css/feelings/whatTheHack.png",
-			"feeling":""
+			"feeling":"The events that we participated together with Sunny, Mani, Jayanand etc.. Some of them we were victorious but some we lost. Will be remembered. And will keep the learning and passion to these events."
 		 },
 		 {
 			"title": "PID/PIS/EUID",
 			"pic": "css/feelings/PIS.jpg",
-			"feeling":""
+			"feeling":"These Events had enabled me to interact with customers and it was a different feel. Thanks for all the opportunities and I would cherish and remember my big 50K win in demoJam PIS."
 		 },
 		 {
 			"title": "FAG",
 			"pic": "css/feelings/fag.png",
-			"feeling":""
+			"feeling":"Starting from JUMMM days till it was called FAG, my involvement in Fun/Events/Activities/Birthdays were fun and I thank the team for supporting and encouraging."
 		 },
 		 {
 			"title": "Discussion",
 			"pic": "css/feelings/kinect.png",
-			"feeling":""
+			"feeling":"On a funny note, Some of the long discussions, funny moments in discussions, and discussions over scrum will be remembered ;-)"
 		 },
 		 {
 		 	"title": "papluTheGiant",
 			"pic": "css/feelings/paplu.jpg",
-			"feeling":""
+			"feeling":"Me being the Paplu in ‘Paplu the giant’ will be remembered. We had lot of fun; thanks to Priti, Priyanka, Uma , Sunny and Eva. It was  fun."
 		 },
 		 {
 		 	"title": "parentsAndTeam",
 			"pic": "css/feelings/parents.png",
-			"feeling":""
+			"feeling":"My biggest treat from the team is the moment captured with my Parents&Team. My Parents were touched and they enjoyed interacting with you all. It was precious moment Thanks a lot guys :-)"
 		 },
 		 {
 		 	"title": "myTrademarks",
 			"pic": "css/feelings/birthday.png",
-			"feeling":""
+			"feeling":"I am sure you all would miss my trademarks like the Heart diagram on birthdays, my mails with images, my smile, my Kinect gestures and of course my marriage talks etc.. "
 		 },
 		 {
 		 	"title": "ourSimplification",
 			"pic": "css/feelings/simplify.png",
-			"feeling":""
+			"feeling":"Ha ha I will remember the simplification that we tried and at last we were successful. We almost complicated the simplify :-)"
 		 },
 		 {
 		 	"title": "football",
 			"pic": "css/feelings/football.png",
-			"feeling":""
+			"feeling":"I am sure you would miss one permanent goal keeper in your football lineup. It was fun playing and winning with you. Do call me if you guys play any other matches."
 		 }
 		 
 	 ]

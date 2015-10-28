@@ -10,10 +10,10 @@
 				data-sap-ui-theme="sap_goldreflection">
 		</script>
 		
-		<script type="text/javascript" src="sphere/sphere3D.js"></script>
+		<script type="text/javascript" src="sphere/sphere3D-min.js"></script>
     
     	<link rel="stylesheet" href="css/demo.css">
-		<title> Jerin's Farewell App </title>
+		<title> Jerins Farewell App </title>
 	
 		<!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
 
@@ -25,6 +25,7 @@
 				
                 setTimeout(function(){
                 	prepareFooter();
+                	createHelpdialog();
                 	$.getJSON("sphere/data/team.json",function(data){
                 		setTimeout(function(){
                 			dataJSON=data;

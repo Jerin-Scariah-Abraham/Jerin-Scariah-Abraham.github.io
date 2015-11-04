@@ -22,19 +22,58 @@
 				DCCode = "data";
 				landscape = "values";
 				var dataJSON = {};
+
+				var browserType = "";
+				var validBrowser = false;
+			    if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+			    {
+			    	browserType ='Opera';
+			    }
+			    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+			    {
+			    	browserType = 'Chrome';
+			        validBrowser = true;
+			    }
+			    else if(navigator.userAgent.indexOf("Safari") != -1)
+			    {
+			    	browserType = 'Safari';
+			    }
+			    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+			    {
+			    	browserType = 'Firefox';
+			    }
+			    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+			    {
+			    	browserType ='IE'; 
+			    }  
+			    else 
+			    {
+			    	browserType = 'unknown';
+			    }
+			    
+			    if(!validBrowser){
+			    	
+			    	setTimeout(function(){
+			    		alert("You are Using: "+browserType+"\nPlease use Chrome");
+			    		$("body").append('<div id="chrome"> Please Use Chrome browser </div>')
+			    	},400);
+			    	
+			    } else {
+			    	 setTimeout(function(){
+		                	prepareFooter();
+		                	createHelpdialog();
+		                	$.getJSON("sphere/data/team.json",function(data){
+		                		setTimeout(function(){
+		                			dataJSON=data;
+		                    		prepareSphere("data");
+		                    		journeyTiles();
+		                		},400)
+		                	});
+		                	
+		                },400);
+			    }
 				
-                setTimeout(function(){
-                	prepareFooter();
-                	createHelpdialog();
-                	$.getJSON("sphere/data/team.json",function(data){
-                		setTimeout(function(){
-                			dataJSON=data;
-                    		prepareSphere("data");
-                    		journeyTiles();
-                		},400)
-                	});
-                	
-                },400);
+               
                 
                 
 				

@@ -22,7 +22,7 @@ body {
 	width: 180px;
     height: 90px;
     text-align: center;
-    line-height: 90px;
+    line-height: 69px;
     margin: 30px;
     background-color: aqua !important;
     background-image: linear-gradient(to bottom, #A0BAC7 0%, #485B65 100%);
@@ -263,6 +263,9 @@ body {
 					for(var j=0;j<venueData.section[i].value.length;j++){
 						$("#venueText_"+i).append("<div class='Vval'>"+venueData.section[i].value[j]+"</div>")
 					}
+					
+					if(venueData.section[i].link)
+						$("#venueText_"+i).append("<div class='Vval'><a target='_blank' href='"+venueData.section[i].link.href+"'> Click Here </a></div>");
 				}
 				
 				$("#venueContent").append("<div class='venueImage1'></div>");
@@ -298,6 +301,7 @@ body {
 				for(var i=0;i<helpData.section.length;i++){
 					$("#venueContent").append("<div class='venueTitle' id='venueText_"+i+"'> </div>");
 					$("#venueText_"+i).append("<div class='Hkey'>"+helpData.section[i].title+"</div>");
+					$("#venueText_"+i).append("<div class='Hval'>"+helpData.section[i].text+"</div>");
 					$("#venueText_"+i).append("<div class='Hval'><a target='_blank' href='"+helpData.section[i].link+"'> Click Here </a></div>")
 				}
 			}

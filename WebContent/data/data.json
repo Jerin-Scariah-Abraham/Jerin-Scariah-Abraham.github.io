@@ -18,7 +18,7 @@
 	"detail": {
 		"occation": {
 			"text": [
-				"He slipped the engagement ring on her finger's promise made for life . . .",
+				"He slipped the engagement ring on her finger's & promise made for life . . .",
 				"Join us as we share their joy, now that they're man and wife!...",
 				"The Parents of Jerin Scariah Abraham (Groom) and Sherin Mary Varghese (Bride) invite you to join them in honoring for post marriage Reception.",
 				"Prepare for a Feast of Jubilation! The honour of your presence is requested at the Reception."
@@ -30,15 +30,15 @@
 		"venue": {
 			"section": [{
 				"title": "Time",
-				"value": ["Feb 20"]
+				"value": ["Feb 20th 2016 , 6 : 30 pm to 8:30 pm"]
 			}, {
 				"title": "Venue",
-				"value": ["address", "address1", "street"]
+				"value": ["Club House", "Pruksa Silvana", "C.P Gate","Budhigere Cross","International Airport road", "Bangalore - 560049"]
 			}, {
 				"title": "Map / Direction",
 				"link": {
 					"text": "Click Here",
-					"href": ""
+					"href": "https://www.google.co.in/maps/place/Pruksa+Silvana/@13.0641019,77.7490689,15z/data=!4m2!3m1!1s0x0:0xf8879156bcad0ccd?sa=X&ved=0ahUKEwiO4_ndrp_KAhXCto4KHX4JDqwQ_BIIfjAN"
 				}
 			}]
 		},
@@ -74,19 +74,19 @@
 		"help": {
 			"section": [{
 				"title": "Trains from Kerala",
-				"text": "Trains from Kerala to Bangalore",
+				"text": "Confused about which train comes where? Here is the list of some trains from Kerala to Bangalore. Hope this helps.",
 				"link": "http://24coaches.com/kerala-bangalore-trains/"
 			},{
 				"title": "Buses from Kerala",
-				"text": "Buses from Kerala to Bangalore",
+				"text": "There are quiet a number of buses that come to bangalore on daily bases. This link helps to book buses from Kerala to Bangalore.",
 				"link": "http://www.redbus.in/travels/kerala-lines-kerala-travels.aspx"
 			}, {
 				"title": "Stay/Hotels near by",
-				"text": "Stay Available near KR Puram",
+				"text": "There are some good stays available near to our location, you can choose from the link below.",
 				"link": "https://www.oyorooms.com/bangalore/hotels?gclid=CNT_mauin8oCFREeaAodxXIIGw&location=K.R+Puram%2C+Bangalore%2C+Karnataka%2C+India&city2=&latitude=13.0040167&longitude=77.68777649999993&checkin=&checkout=&city=bangalore&guests=1&rooms=1&citycode=BLR&utm_campaign=[S-Bangalore-Area]&utm_device=c&utm_term=hotel%20near%20kr%20puram&utm_medium=S_NB_CPC&utm_source=google&ef_id=VpJRlgAAANPkWNRY:20160110124158:s"
 			},{
 				"title": "Cabs needed to travel locally",
-				"text": "Cab list and numbers",
+				"text": "Some contacts of the cabs in bangalore will defenitely be handy. The below link helps you to get the contact of the bangalore cab service 24 X 7.",
 				"link": "http://www.justdial.com/Bangalore/24-Hours-Taxi-Services/ct-580854"
 			}]
 		}

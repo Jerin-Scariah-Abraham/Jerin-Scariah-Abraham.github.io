@@ -1,0 +1,95 @@
+{
+	"title": "You are invited, to be a part of our celebration.",
+
+	"parts": [{
+		"key": "occation",
+		"value": "Occation"
+	}, {
+		"key": "venue",
+		"value": "Time and Venue"
+	}, {
+		"key": "contact",
+		"value": "Contact Us"
+	}, {
+		"key": "help",
+		"value": "Help Links"
+	}],
+
+	"detail": {
+		"occation": {
+			"text": [
+				"He slipped the engagement ring on her finger's promise made for life . . .",
+				"Join us as we share their joy, now that they're man and wife!...",
+				"The Parents of Jerin Scariah Abraham (Groom) and Sherin Mary Varghese (Bride) invite you to join them in honoring for post marriage Reception.",
+				"Prepare for a Feast of Jubilation! The honour of your presence is requested at the Reception."
+			],
+			"img": ""
+
+		},
+
+		"venue": {
+			"section": [{
+				"title": "Time",
+				"value": ["Feb 20"]
+			}, {
+				"title": "Venue",
+				"value": ["address", "address1", "street"]
+			}, {
+				"title": "Map / Direction",
+				"link": {
+					"text": "Click Here",
+					"href": ""
+				}
+			}]
+		},
+
+		"contact": {
+			"section": [{
+				"title": "Jerin",
+				"img": "pic/jerin.png",
+				"contact": "+91 9980841835"
+			}, {
+				"title": "Sherin",
+				"img": "pic/sherin.png",
+				"contact": "+91 9945256754"
+			}, {
+				"title": "Scariah Abraham",
+				"img": "pic/jose.png",
+				"contact": "+91 9880738449"
+			}, {
+				"title": "Varghese George",
+				"img": "pic/wilson.png",
+				"contact": "+91 9605345862 / +91 8547378482"
+			}, {
+				"title": "Marykutty Abraham",
+				"img": "pic/lily.png",
+				"contact": "+91 9731542441"
+			}, {
+				"title": "Sherly Varghese",
+				"img": "pic/sherly.png",
+				"contact": "+91 9605345863"
+			}]
+		},
+
+		"help": {
+			"section": [{
+				"title": "Trains from Kerala",
+				"text": "Trains from Kerala to Bangalore",
+				"link": "http://24coaches.com/kerala-bangalore-trains/"
+			},{
+				"title": "Buses from Kerala",
+				"text": "Buses from Kerala to Bangalore",
+				"link": "http://www.redbus.in/travels/kerala-lines-kerala-travels.aspx"
+			}, {
+				"title": "Stay/Hotels near by",
+				"text": "Stay Available near KR Puram",
+				"link": "https://www.oyorooms.com/bangalore/hotels?gclid=CNT_mauin8oCFREeaAodxXIIGw&location=K.R+Puram%2C+Bangalore%2C+Karnataka%2C+India&city2=&latitude=13.0040167&longitude=77.68777649999993&checkin=&checkout=&city=bangalore&guests=1&rooms=1&citycode=BLR&utm_campaign=[S-Bangalore-Area]&utm_device=c&utm_term=hotel%20near%20kr%20puram&utm_medium=S_NB_CPC&utm_source=google&ef_id=VpJRlgAAANPkWNRY:20160110124158:s"
+			},{
+				"title": "Cabs needed to travel locally",
+				"text": "Cab list and numbers",
+				"link": "http://www.justdial.com/Bangalore/24-Hours-Taxi-Services/ct-580854"
+			}]
+		}
+	}
+
+}

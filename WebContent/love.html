@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<script src="js/jquery.min.js""></script>
+		<style>
+
+*{
+	font-family: monospace;
+}
+body {
+	background-image: url("Picture.png");
+	    background-size: cover;
+    background-position-y: -275px;
+    background-repeat: no-repeat;
+    min-width: 1250px;
+    min-height: 788px;
+}
+			
+.tab{
+	width: 180px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    margin: 30px;
+    background-color: aqua !important;
+    background-image: linear-gradient(to bottom, #A0BAC7 0%, #485B65 100%);
+    font-size: 21px;
+    font-weight: bold;
+    -webkit-box-shadow: 10px 10px 25px -3px rgba(250,247,250,1);
+	-moz-box-shadow: 10px 10px 25px -3px rgba(250,247,250,1);
+	box-shadow: 10px 10px 25px -3px rgba(250,247,250,1);
+}
+
+#title{
+	height: 18%;
+    position: absolute;
+    top: 0;
+    width: 99%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 54px;
+    color: #FBFAF8;
+    font-weight: bold;
+}
+
+#tabs, #content{
+	margin-bottom: 5%;
+    bottom: 0;
+    position: absolute;
+    height: 70%;
+}
+
+#content{
+    width: 80%;
+    right: 0;
+    background-color: #BFBCBC;
+    opacity: 0.9;
+    margin-right: 20px;
+        overflow-y: auto;
+}
+
+#occationText{
+	background-image: url("heart_falling.gif-c200");
+	background-size: contain;
+}
+
+#imageOccation{
+	width: 40%;
+    height: 100%;
+    background-image: url("jerinSherin.jpg");
+    background-size: cover;
+}
+
+#occationText{
+	height: 100%;
+	width: 60%;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+#occationText>div{
+	font-size: 30px !important;
+    font-family: monospace;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#venueTitle, #contactTitle{
+	font-size: 30px;
+    text-align: center;
+    background: rgba(10, 92, 162, 0.44);
+    font-weight: bold;
+}
+
+.Vkey, .Hkey{
+	font-size: 26px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.Vval, .Hval{
+	margin-left: 80px;
+    font-size: 26px;
+}
+
+.venueTitle{
+	margin: 10px;
+	background: rgba(17, 83, 140, 0.64);
+}
+
+.venueImage1{
+	background-image: url("ClubHouse.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 140px;
+    margin: 14px;
+    float: left;
+}
+
+.venueImage2{
+	background-image: url("pruksa.jpg");
+    background-size: cover;
+    width: 285px;
+    height: 145px;
+    margin: 14px;
+    float: left;
+}
+
+.venueImage3{
+	background-image: url("pruksa2.jpg");
+    background-size: cover;
+    width: 330px;
+    height: 248px;
+    margin: 14px;
+    float: left;
+}
+
+.venueImage4{
+	background-image: url("pruksa3.jpg");
+    background-size: cover;
+    width: 330px;
+    height: 480px;
+    margin: 14px;
+    float: left;
+}
+
+.Ctile{
+	width: 40%;
+	float: left;
+	margin: 2%;
+	background-color: #8482A7;
+}
+
+.Cimg{
+	background-image: url(pic/jerin.png);
+    width: 160px;
+    height: 140px;
+    background-size: cover;
+    float: left;
+}
+
+.CName{
+	font-size: 26px;
+	font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.Ccontact{
+	font-size: 20px;
+	text-align: center;
+}
+
+
+		</style>
+	</head>
+	<body>
+		<script>
+			var dataJson = {};
+			loadData();
+			
+			function loadData(){
+				
+				$.getJSON("data/data.json", function(data){
+					dataJson = data;
+					makePage();
+				});
+			}
+			
+			function makePage(){
+				$("body").append("<div id='title' >"+dataJson.title+"</div>");
+				$("body").append("<div id='tabs' ></div>");
+				$("body").append("<div id='content' ></div>");
+				
+				makeTabs();
+				makeContent('occation');
+			}
+			
+			function makeTabs(){
+				var parts = dataJson.parts;
+				for(var i=0;i<parts.length;i++){
+					$("#tabs").append('<div id='+parts[i].key+' class="tab">'+parts[i].value+'</div>');
+				}
+				
+				$(".tab").click(function(){
+					var selectedKey = $(this).attr("id");
+					makeContent(selectedKey);
+				});
+			}
+			
+			function makeContent(selectedTab){
+				
+				$("#content").html("");
+				switch(selectedTab){
+					case 'occation':
+						makeOccationContent();
+						break;
+					case 'venue':
+						makeVenueContent();
+						break;
+					case 'contact':
+						makeContactContent()
+						break;
+					case 'help':
+						makeHelpContent()
+						break;
+					default:
+						break;
+				}
+								
+			}
+			
+			function makeOccationContent(){
+				var occationData = dataJson.detail.occation;
+				
+				$("#content").append("<div id='imageOccation'></div>");
+				$("#content").append("<div id='occationText'></div>");
+				
+				for(var l=0;l<occationData.text.length;l++){
+					$("#occationText").append('<div>'+occationData.text[l]+'</div>');
+				}
+				
+			}
+			
+			function makeVenueContent(){
+				var venueData = dataJson.detail.venue;
+				
+				$("#content").append("<div id='venueDetails'></div>");
+				
+				$("#venueDetails").append("<div id='venueTitle'> Venue Details </div>");
+				$("#venueDetails").append("<div id='venueContent'></div>");
+				
+				for(var i=0;i<venueData.section.length;i++){
+					$("#venueContent").append("<div class='venueTitle' id='venueText_"+i+"'> </div>");
+					$("#venueText_"+i).append("<div class='Vkey'>"+venueData.section[i].title+"</div>");
+					
+					if(venueData.section[i].value)
+					for(var j=0;j<venueData.section[i].value.length;j++){
+						$("#venueText_"+i).append("<div class='Vval'>"+venueData.section[i].value[j]+"</div>")
+					}
+				}
+				
+				$("#venueContent").append("<div class='venueImage1'></div>");
+				$("#venueContent").append("<div class='venueImage2'></div>");
+				$("#venueContent").append("<div class='venueImage3'></div>");
+				$("#venueContent").append("<div class='venueImage4'></div>");
+			}
+			
+			function makeContactContent(){
+				var contactData = dataJson.detail.contact;
+				
+				$("#content").append("<div id='contactDetails'></div>");
+				$("#contactDetails").append("<div id='contactTitle'> Contact Us, For Any Help </div>");
+				$("#contactDetails").append("<div id='contactContent'></div>");
+				
+				for(var i=0;i<contactData.section.length;i++){
+					$("#contactContent").append("<div class='Ctile' id='C_"+i+"'></div>");
+					$("#C_"+i).append("<div class='Cimg' style='background-image: url("+contactData.section[i].img+") '></div>");
+					$("#C_"+i).append("<div class='CName'> "+contactData.section[i].title+" </div>");
+					$("#C_"+i).append("<div class='Ccontact'> "+contactData.section[i].contact+" </div>");
+					
+				}
+			}
+			
+			function makeHelpContent(){
+				var helpData = dataJson.detail.help;
+				
+				$("#content").append("<div id='venueDetails'></div>");
+				
+				$("#venueDetails").append("<div id='venueTitle'> Venue Details </div>");
+				$("#venueDetails").append("<div id='venueContent'></div>");
+				
+				for(var i=0;i<helpData.section.length;i++){
+					$("#venueContent").append("<div class='venueTitle' id='venueText_"+i+"'> </div>");
+					$("#venueText_"+i).append("<div class='Hkey'>"+helpData.section[i].title+"</div>");
+					$("#venueText_"+i).append("<div class='Hval'><a target='_blank' href='"+helpData.section[i].link+"'> Click Here </a></div>")
+				}
+			}
+		</script>	
+	</body>
+</html>

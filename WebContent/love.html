@@ -180,6 +180,16 @@ body {
 	text-align: center;
 }
 
+.filpTile{
+	transform: rotateY(360deg);
+    transition-duration: 2s;
+}
+
+.filpTileToggle{
+	transform: rotateY(0deg) !important;
+    transition-duration: 2s !important;
+}
+
 
 		</style>
 	</head>
@@ -214,6 +224,14 @@ body {
 				$(".tab").click(function(){
 					var selectedKey = $(this).attr("id");
 					makeContent(selectedKey);
+					
+					if( $("#content").attr("class") && $("#content").attr("class").indexOf("filpTileToggle") == -1 ){
+						$("#content").removeClass("filpTile");
+						$("#content").addClass("filpTileToggle");
+					} else {
+						$("#content").addClass("filpTile");
+						$("#content").removeClass("filpTileToggle");
+					}
 				});
 			}
 			
@@ -236,6 +254,7 @@ body {
 					default:
 						break;
 				}
+				
 								
 			}
 			
